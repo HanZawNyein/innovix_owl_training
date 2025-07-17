@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record model="ir.actions.client" id="pos_innovix_cleint_action">
+        <field name="name">Innovix Solutions</field>
+        <field name="tag">pos_innovix.PosInnovixClientAction</field>
+    </record>
+
+    <menuitem
+            web_icon="pos_innovix,static/description/icon.png"
+            id="pos_innovix_menu"
+            action="pos_innovix.pos_innovix_cleint_action"/>
+</odoo>

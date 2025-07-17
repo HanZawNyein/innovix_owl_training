@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <t t-name="pos_innovix.Main">
+       <div class="container m-2">
+           <h2> Hello world</h2>
+           <hr/>
+           <ul class="list-group">
+               <t t-foreach="state.partners" t-as="partner" t-key="partner.id">
+                   <li class="list-group-item" t-esc="partner.name">
+                       <t t-esc="partner.name"/>
+                   </li>
+               </t>
+            </ul>
+       </div>
+        <!--        <div class="container m-5">-->
+        <!--            <t t-out="state.name"/>,-->
+        <!--            <t t-out="state.age"/>-->
+        <!--            <button class="btn btn-primary m-2" t-on-click="change">Update</button>-->
+        <!--        </div>-->
+
+        <!--        <div class="container mt-5">-->
+        <!--            <input class="form-control m-5" placeholder="search" t-ref="search-input"/>-->
+        <!--            <button class="btn btn-primary m-2" t-on-click="search">Search</button>-->
+        <!--        </div>-->
+
+        <!--        <div class="container m-5">-->
+        <!--            <input class="form-control m-5" placeholder="name" t-model="partner.name"/>-->
+        <!--            <input class="form-control m-5" placeholder="age" t-model="partner.age"/>-->
+        <!--            <input class="form-control m-5" placeholder="phone number" t-model="partner.phone"/>-->
+        <!--            <button class="btn btn-primary m-2 align-items-end" t-on-click="create_partner">submit</button>-->
+
+        <!--        </div>-->
+    </t>
+</templates>
